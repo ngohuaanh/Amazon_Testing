@@ -1,10 +1,13 @@
 package test.amazon.common;
 
 import test.amazon.common.CommonClass.PageType;
+import test.amazon.common.CommonClass.ResetType;
 
 public class WebAttribute {
 	private PageType currentPage;
 	private String username;
+	private Locale locale;
+	private ResetType resetType;
 	public String getUsername() {
 		return username;
 	}
@@ -41,6 +44,19 @@ public class WebAttribute {
 	public WebAttribute(){
 		// Define all default value of attribute of web
 		this.currentPage = PageType.HOME_PAGE;
+		this.locale = new Locale(CommonClass.Language.EN);
+	}
+	public Locale getLocale() {
+		return locale;
+	}
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+	public ResetType getResetType() {
+		return resetType;
+	}
+	public void setResetType(ResetType resetType) {
+		this.resetType = resetType;
 	}
 	
 }

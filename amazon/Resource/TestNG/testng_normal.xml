@@ -2,14 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1">
+<parameter name="configFile" value="Resource/Configuration/config.properties" />
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
   <test name="test1">
     <groups>
 	    <run>
-			<include name="Test" />
+			<include name="Smoke" />
 	    </run>
 	</groups>
     <classes>
-       <class name="test.amazon.testsuite.normal.LoginTest"/>
+    	<class name="test.amazon.testsuite.normal.LoginTest"/>
+       	<class name="test.amazon.testsuite.normal.PurchaseOrderTest"/>
     </classes>
   </test>
 </suite>

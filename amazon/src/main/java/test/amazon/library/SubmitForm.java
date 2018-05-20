@@ -10,11 +10,26 @@ public class SubmitForm {
 		this.e = e;
 	}
 	
-	public void InputValue(String type, String value) {
+	public void inputValue(String type, String value) {
 		By locator = By.xpath("//input[@type=\""+type+"\"]");
 		System.out.println(locator+":input text '" + value + "'");
 		e.findElement(locator).sendKeys(value);
-		
+	}
+	
+	public void inputValue(By locator, String value) {
+		System.out.println(locator+":input text '" + value + "'");
+		e.findElement(locator).sendKeys(value);
+	}
+	
+	public void clearValue(String type) {
+		By locator = By.xpath("//input[@type=\""+type+"\"]");
+		System.out.println(locator+":clear");
+		e.findElement(locator).clear();
+	}
+	
+	public void clearValue(By locator) {
+		System.out.println(locator+":clear");
+		e.findElement(locator).clear();
 	}
 	
 	public void submit() {
