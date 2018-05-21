@@ -1,21 +1,30 @@
-============Q1================
-# Amazon_Testing
+#Q1
+## Getting started with Amazon_Testing
 Perform automation test for Amazon website
 
-# Build project
+### Build project
 mvn clean install
 
-# Execute test
+### Execute test
 
 java -jar target/amazon-0.0.1-SNAPSHOT.jar -c CONFIG_FILE_PATH  -g GROUP_OF_TESTCASE -o OUTPUT_TEST_REPORT_DIRECTORY
 
-Ex: java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Full" -o ouput
-	java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Smoke"
+```
+java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Full" -o ouput
+```
+or
+```
+java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Smoke"
+```
 
-============Q1================
-# Linux
+#Q2
+## Run on Linux
 ./script.sh INPUT_PATH
-Ex: ./script.sh input.csv
-# Mac
+```
+./script.sh input.csv
+```
+## Run on Mac
 sh script.sh INPUT_PATH
-Ex: sh script.sh input.csv
+```
+sh script.sh input.csv
+```
