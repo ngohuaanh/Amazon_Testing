@@ -1,3 +1,4 @@
+============Q1================
 # Amazon_Testing
 Perform automation test for Amazon website
 
@@ -11,3 +12,10 @@ java -jar target/amazon-0.0.1-SNAPSHOT.jar -c CONFIG_FILE_PATH  -g GROUP_OF_TEST
 Ex: java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Full" -o ouput
 	java -jar target/amazon-0.0.1-SNAPSHOT.jar -c Resource/Configuration/config.properties  -g "Smoke"
 
+============Q1================
+# Linux
+./script.sh INPUT_PATH
+Ex: ./script.sh input.csv
+# Mac
+sh script.sh INPUT_PATH
+Ex: sh script.sh input.csv
